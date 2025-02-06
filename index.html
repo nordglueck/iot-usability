@@ -1,1 +1,61 @@
-test github pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>IoT Usability</h1>
+        <p>Exploring user interfaces in the world of the IoT</p>
+    </header>
+    <section id="bio">
+        <div class="bio-container">
+            <img src="bio-jennifer-horstmann.jpg" alt="Portrait of Jennifer Horstmann">
+            <div class="bio-text">
+                <h2>Jennifer Horstmann</h2>
+                <p>Research Assistant, PhD candidate</p>
+                <p>Sustainable Communication Networks | University of Bremen</p>
+                <p>My current research revolves around the usability of IoT devices and the question of how user interfaces for IoT can and need to be designed. I am a graphic designer by training and completed my master's in computer science at the University of Bremen.</p>
+                <div class="bio-links">
+                    <a href="https://www.linkedin.com/in/jennifer-horstmann" target="_blank">LinkedIn</a>
+                    <a href="https://orcid.org/0009-0007-3544-9325" target="_blank">ORCiD</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <section id="next-steps">
+    <h2>Coming soon</h2>
+    <ul>
+        <li>Project description</li>
+        <li>Updates</li>
+        <li>Published papers</li>
+        <li>...</li>
+    </ul>
+</section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Interested in my work? Have questions or want to collaborate?</p>
+        <div class="bio-links">
+            <a href="#" id="email-link">Email me!</a>
+        </div>
+    </section>
+</body>
+<script>
+document.getElementById("email-link").addEventListener("click", function(event) {
+    event.preventDefault(); 
+
+    let user = "jeho";
+    let domain = "uni-bremen.de";
+    let email = user + "@" + domain;
+
+    window.location.href = "mailto:" + email;
+});
+
+</script>
+</html>
